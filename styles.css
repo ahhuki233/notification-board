@@ -57,9 +57,12 @@
 
 .notification-box {
     display: flex;
-    align-items: center;
-    padding: 0px 30px;
+    /* align-items: center; */
+    align-items: flex-start;
+    /* padding: 0px 30px; */
+    padding-left: 30px;
     border-bottom: 1px solid #eaeaea;
+    /* justify-content: space-between; */
 }
 
 .notification-icon {
@@ -69,8 +72,9 @@
     align-items: center;
     /* margin-top: -60px; */
     font-size: 18px;
-    position:relative;
-    top:-30px
+    position: relative;
+    /* top:-30px */
+    margin-top: 20px;
 }
 
 .notification-content-box {
@@ -78,7 +82,25 @@
     margin-left: 15px;
 }
 
-.notification-link{
-    color:#4b87ff;
+.notification-link {
+    color: #4b87ff;
     text-decoration: none;
+}
+
+.notification-delete-btn {
+    float: right;
+    height: 145px;
+    color: #ffffff;
+    background-color: #f73331;
+    border: none;
+    cursor: pointer;
+    width: 109px;
+    font-size: 16px;
+}
+
+.delete-button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 600px;
 }
